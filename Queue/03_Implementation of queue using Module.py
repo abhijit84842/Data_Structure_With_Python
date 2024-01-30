@@ -37,3 +37,28 @@ print(queue1)         #output=>       deque([10, 20, 30, 40, 50])
 # remove the element from the queue..
 queue1.popleft()
 print(queue1)                  #output=>      deque([20, 30, 40, 50])
+
+
+
+# queue Module..
+
+# queue -> Queue()
+
+'''
+We use in queue modules put() and get() instead of append() and pop() method....
+
+'''
+
+import queue
+q=queue.Queue()
+
+q.put(100)
+q.put(200)
+q.put(300)
+q.put(400)
+print(q.queue)      #output=> deque([100, 200, 300, 400])
+
+
+# To remove the element from queue..
+q.get()
+print(q.queue)           #output=>        deque([200, 300, 400])
