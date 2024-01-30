@@ -28,3 +28,17 @@ q.pop(0)
 print(q)            #output=> [3, 4]
 
 
+'''Implenetation using MOdules'''
+import queue
+q1=queue.PriorityQueue()
+q1.put(10)
+q1.put(20)
+q1.put(30)
+q1.put(40)
+q1.put(50)
+print(q1.queue)                    #output=>  [10, 20, 30, 40, 50]
+
+
+# TO remove ..
+q1.get()
+print(q1.queue)                 #output=>   [20, 40, 30, 50]
